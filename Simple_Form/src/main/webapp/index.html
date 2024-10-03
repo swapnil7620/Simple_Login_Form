@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+
+
+
+<style>
+		.container{
+		width :40%;
+		border : 1px solid black;
+		padding: 20px;
+		margin :auto;
+		font-size :20px;
+		
+		
+		}
+		
+		#my table tr td input
+		{
+		 font-size: 20px;
+		}
+		
+		
+	</style>
+</head>
+<body style = "background-color : grey">
+		
+     
+    <div class="container">
+        
+        <h2>My Form</h2>
+        
+       <form id="my" action ="Registerservlet " method= "post" >
+       <table> 
+         <tr> 
+             <td>Enter Your Name</td>
+             <td> <input type ="text" name = "user_Name" required placeholder ="Enter here"  /></td>
+         </tr>
+         
+          <tr> 
+             <td>Enter Your Password</td>
+             <td> <input type ="password" name = "user_Password" required placeholder ="Enter password here"  /></td>
+         </tr>
+         <tr> 
+             <td>Enter your email</td>
+             <td> <input type ="text" name = "user_email" placeholder required ="Enter_email  here "  /></td>
+         </tr>
+         
+          <tr> 
+             <td> Select Gender</td>
+             <td> <input type = "radio" name = "gender" required value ="Male" >Male   &nbsp; <input type = "radio" name = "gender" required value ="female"/>Female</td>
+            <!--   <td> <input type = "radio" name = "gender" value ="female"/>Female</td> -->
+         </tr>
+         <tr> 
+              <td>
+                     Select  Your Course
+              </td>
+              
+              <td> 
+             
+              <select name = "user_Course" required> 
+                <option value = "java">Java </option>
+                <option value = "C#">C#</option>
+                <option value = "CPP">CPP</option>
+                <option value = "Python">Python</option>
+                <option value = "JavaScript">JavaScript</option>
+              
+              </select>
+              
+              </td>
+  
+         </tr>
+         
+          <tr>
+               <td style = "text-align : center">
+                   <input type ="checkbox" value = "checked"  name ="condition" ></input>    
+               </td>
+               <td>Agree with terms and condition </td>
+        </tr>
+           <tr>
+              <td>
+              </td>
+                <td style = "align-items: center " >
+                
+                
+                 <button style = "color: blue" type="submit">Register</button>
+                 <button style = "color : blue" type="reset">Reset</button>
+                </td>
+           </tr>
+        
+       </table>
+       </form>
+    </div>
+     
+</body>
+</html>
